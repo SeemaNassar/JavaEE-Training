@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Orianteed_Project</display-name>
+
+ 
+ 
+  
+  <servlet>
+    <servlet-name>LogIn</servlet-name>
+    <servlet-class>controller.LoginServlet</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+    <servlet-name>LogIn</servlet-name>
+    <url-pattern>/LogInPage</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>mainPage</servlet-name>
+    <servlet-class>controller.ShowCategory</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+    <servlet-name>mainPage</servlet-name>
+    <url-pattern>/mainPage</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>Wel</servlet-name>
+    <servlet-class>controller.FirstPage</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+    <servlet-name>Wel</servlet-name>
+    <url-pattern>/FirstPage</url-pattern>
+  </servlet-mapping> 
+  <servlet>
+    <servlet-name>product</servlet-name>
+    <servlet-class>controller.Product</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+    <servlet-name>product</servlet-name>
+    <url-pattern>/products</url-pattern>
+  </servlet-mapping>
+ 
+   <servlet>  
+      
+    <servlet-name>LogoutServlet</servlet-name>  
+    <servlet-class>controller.LogoutServlet</servlet-class>  
+  </servlet>  
+  <servlet-mapping>  
+    <servlet-name>LogoutServlet</servlet-name>  
+    <url-pattern>/LogoutServlet</url-pattern>  
+  </servlet-mapping>  
+
+
+
+  
+ <servlet>
+<servlet-name>sonoojaiswa</servlet-name>  
+<servlet-class>controller.Register</servlet-class>  
+</servlet>  
+ 
+
+<servlet-mapping>  
+<servlet-name>sonoojaiswa</servlet-name>  
+<url-pattern>/registration</url-pattern>  
+</servlet-mapping>
+
+<servlet>
+<servlet-name>sonoojaisw</servlet-name>  
+<servlet-class>controller.Main</servlet-class>  
+</servlet>  
+ 
+
+<servlet-mapping>  
+<servlet-name>sonoojaisw</servlet-name>  
+<url-pattern>/main</url-pattern>  
+</servlet-mapping>
+
+  <welcome-file-list>
+    <welcome-file>mainPage</welcome-file>
+    </welcome-file-list>
+ 
+ </web-app> 
+
